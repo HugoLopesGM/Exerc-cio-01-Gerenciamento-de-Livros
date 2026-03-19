@@ -18,11 +18,11 @@ public class LivroService {
 
     }
 
-    public List<Livro> listarLivro(){
+    public List<Livro> listarTodos(){
         return repositorioLivro.findAll();
     }
 
-    public Optional<Livro>BuscaLivro(Long id){
+    public Optional<Livro>buscaLivro(Long id){
         return repositorioLivro.findById(id);
     }
 
